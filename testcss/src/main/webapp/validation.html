@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+
+function testrole() {
+	alert("Test")
+	
+	var name=document.testdata.name.value;
+	var pd=document.testdata.pwd.value;
+	var cpd=document.testdata.cpwd.value;
+	if(name==null || name=="")
+		{
+		alert("Name must have some value");
+		return false;
+		}
+	else if(pd.lenght<4)
+		{
+		alert("pass must be greater than 4");
+		return false;
+		}
+	if(pd==cpd)
+		{
+		alter("match")
+		return true;
+		}
+	else
+		{
+		alert("password not match");
+		return false;
+		}
+}
+</script>
+
+</head>
+<body>
+Welcome To My Login Portal<br>
+<form name="testdata" method="post" action="login.html" onsubmit="return testrole()">
+username <input type="text" name="name"><br>
+password <input type="password" name="pwd"><br>
+confirm password <input type="password" name="cpwd"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>

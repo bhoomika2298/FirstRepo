@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+body
+{
+	background-color:pink;
+	background-image: url(img/test.jpeg);
+	background-repeat: no-repeat;
+	background-position: 20% 20%;
+}
